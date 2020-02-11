@@ -1,32 +1,43 @@
-function setup() { 
-	createCanvas(600, 400);
-	rectMode(CENTER);
-} 
-function draw() { 
-	background(50,100, 200) ;
-    fill("lavender")
-     
+var mrlair;
 
-	
-	var x = mouseX;
-	var y = mouseY;
-	var offset = 100;
 
-	noStroke();
-	circle( x, y, 140, height);
-	rect( x, y, 100, height); // face
-
-	stroke("black");
-	fill("red");
-	ellipse(x - offset, y - offset, 40); // right eye
-	ellipse(x + offset, y - offset, 40); // left eye
-	rect(x, y + offset, 40, 20, 10); // mouth
-	rect(x, y + offset,150, 168, 50, 100);
+/* 
+	runs before setup
+	when preload is done, 
+	setup gets called
+*/
+function preload() {
+	mrlair = loadImage('mr.lair -2.png');
 	
-	fill('green');
-	
-    var w = map(x, 0, width, 100, 250)
-    
-	ellipse(x, y, w, 10);
 }
+
+// location variables
+var mrlairX = 100;
+var mrlairY = 200;
+
+var story = " mr.lester see jerry house in the distance Jerry.";
+
+// runs once to set up browser
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+}
+
+// runs 60fps draws graphics
+function draw() {
+	background('lightblue');
+
+	// draw characters
+	image(mrlair, mrlairX, mrlairY);
+	
+
+	// narration
+	textSize(30);
+	textAlign(CENTER, CENTER);
+	text(story, width/4, 20, width/2);
+}
+
+
+
+
+
 
