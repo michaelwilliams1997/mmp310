@@ -1,5 +1,5 @@
 var mrlair;
-
+var jerry;
 
 /* 
 	runs before setup
@@ -7,15 +7,19 @@ var mrlair;
 	setup gets called
 */
 function preload() {
-	mrlair = loadImage('mr.lair -2.png');
+	mrlair = loadImage('mr.lair1.png');
+    jerry  = loadImage('jerry .png');
 	
-}
+	
+} 
 
 // location variables
 var mrlairX = 100;
 var mrlairY = 200;
+var jerryX  = 150;
+var jerryY  = 260;
 
-var story = " mr.lester see jerry house in the distance Jerry.";
+var story = "Once upon a time, there were two characters named mr.lester and Jerry.";
 
 // runs once to set up browser
 function setup() {
@@ -28,7 +32,7 @@ function draw() {
 
 	// draw characters
 	image(mrlair, mrlairX, mrlairY);
-	
+	image (jerry, jerryX,  jerryY);
 
 	// narration
 	textSize(30);
