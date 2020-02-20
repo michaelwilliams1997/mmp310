@@ -16,8 +16,8 @@ function preload() {
 // location variables
 var mrlairX = 100;
 var mrlairY = 200;
-var jerryX  = 150;
-var jerryY  = 260;
+var jerryX  = 850;
+var jerryY  = 170;
 
 var story = "Once upon a time, there were two characters named mr.lester and Jerry.";
 
