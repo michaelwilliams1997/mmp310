@@ -1,47 +1,20 @@
-var mrlair;
-var jerry;
 
-/* 
-	runs before setup
-	when preload is done, 
-	setup gets called
-*/
-function preload() {
-	mrlair = loadImage('mr.lair1.png');
-    jerry  = loadImage('jerry .png');
-	
-	
-} 
-
-// location variables
-var mrlairX = 100;
-var mrlairY = 200;
-var jerryX  = 150;
-var jerryY  = 260;
-
-var story = "Once upon a time, there were two characters named mr.lester and Jerry.";
-
-// runs once to set up browser
+let y = 100;
+// The statements in the setup() function
+// execute once when the program begins
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+  createCanvas(920, 700); 
+  stroke(355);
+  frameRate(40);
 }
-
-// runs 60fps draws graphics
-function draw() {
-	background('lightblue');
-
-	// draw characters
-	image(mrlair, mrlairX, mrlairY);
-	image (jerry, jerryX,  jerryY);
-
-	// narration
-	textSize(30);
-	textAlign(CENTER, CENTER);
-	text(story, width/4, 20, width/2);
+// The statements in draw() are executed until the
+// program is stopped. Each statement is executed in
+// sequence and after the last line is read,
+function draw(center) {
+  background(0); 
+  y = y - 1;
+  if (y < 10) {
+    y = height;
+  }
+  square(0, y, width, y);
 }
-
-
-
-
-
-
