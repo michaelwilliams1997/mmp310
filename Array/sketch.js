@@ -19,10 +19,10 @@ var mrlairX = 100;
 var mrlairY = 200;
 var jerryX  = 850;
 var jerryY  = 170;
-var groundX  = 150;
-var groundY  = 970;
-
-
+var groundX = 150;
+var groundY = 970;
+var clouds
+var clouds
 var story = "Once upon a time, there were two characters named mr.lester and Jerry.";
 
 // runs once to set up browser

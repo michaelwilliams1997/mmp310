@@ -15,8 +15,8 @@ function preload() {
 } 
 
 // location variables
-var mrlairX = 100;
-var mrlairY = 200;
+var mrlairX = 200;
+var mrlairY = 700;
 var cloudsX = 750;
 var cloudsY = 170;
 var houseX  = 950;
@@ -26,7 +26,7 @@ var sunY   =35;
 var currentSetting = "outside" 
     
 
-var story = "Mr.lair see jerry at his house to go tell a lie for fun .";
+var story = "Mr.lair is Outside chilling and thinking about doing something stupid.";
 
 // runs once to set up browser
 function setup() {
@@ -111,10 +111,10 @@ function mousePressed() {
 		currentSetting = "ot";
 
 		// update story
-		story = "Mr.lair see jerry at his house to go tell a lie for fun .";
+		story = "Mr.lair see jerry house to go tell a lie for fun so he can get a joke out off it .";
 
 		// update characters position
-		mr.lairX = 400;
+		mrlairX = 400;
 		jerryX = 500;
 
 	} else if (currentSetting == "talk") {
