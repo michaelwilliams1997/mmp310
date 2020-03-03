@@ -123,7 +123,7 @@ function mousePressed() {
 
 		
         jerryX = 100;
-		mr.lairX = 300;
+		mrlairX = 300;
 	}
 
 }
