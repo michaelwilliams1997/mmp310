@@ -1,5 +1,5 @@
 var mrlair;
-var jerry;
+var megaman;
 var ground;
 var clouds;
 /* 
@@ -9,7 +9,7 @@ var clouds;
 */
 function preload() {
 	mrlair = loadImage('mr.lair1.png');
-    jerry  = loadImage('jerry .png');
+   megaman  = loadImage('megaman-moving.gif');
 	ground = loadImage('mr.lairground.png');
 	clouds =loadImage('clouds.png');
    
@@ -19,8 +19,8 @@ function preload() {
 // location variables
 var mrlairX = 100;
 var mrlairY = 200;
-var jerryX  = 850;
-var jerryY  = 170;
+var megamanX  = 650;
+var megamanY  = 170;
 var groundX = 150;
 var groundY = 970;
 var cloudsX = 200;
@@ -70,7 +70,7 @@ function draw() {
 
 	// draw characters
 	image(mrlair, mrlairX, mrlairY);
-	image (jerry, jerryX,  jerryY);
+	image (megaman, megamanX,  megamanY);
     image (ground, groundX,  groundY);
 	// narration
 	textSize(30);
