@@ -23,7 +23,7 @@ var groundX  = 150;
 var groundY  = 970;
 
 
-var story = "Once upon a time, there were two characters named mr.lester and Jerry.";
+var story = "Once upon a time, there were two characters named mr.lester and Jerry and mr.lair is animplsivie liar who learns not to be a liar.";
 
 // runs once to set up browser
 function setup() {
